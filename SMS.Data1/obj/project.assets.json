@@ -6907,11 +6907,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\ciera\\Documents\\Practical2\\SMS.Data1\\SMS.Data1.csproj",
+      "projectUniqueName": "C:\\Users\\ciera\\OneDrive\\Documents\\GitProjects\\Project2\\Project2\\SMS.Data1\\SMS.Data1.csproj",
       "projectName": "SMS.Data1",
-      "projectPath": "c:\\Users\\ciera\\Documents\\Practical2\\SMS.Data1\\SMS.Data1.csproj",
+      "projectPath": "C:\\Users\\ciera\\OneDrive\\Documents\\GitProjects\\Project2\\Project2\\SMS.Data1\\SMS.Data1.csproj",
       "packagesPath": "C:\\Users\\ciera\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\ciera\\Documents\\Practical2\\SMS.Data1\\obj\\",
+      "outputPath": "C:\\Users\\ciera\\OneDrive\\Documents\\GitProjects\\Project2\\Project2\\SMS.Data1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ciera\\AppData\\Roaming\\NuGet\\NuGet.Config",

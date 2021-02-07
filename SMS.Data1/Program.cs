@@ -6,20 +6,16 @@ namespace SMS.Data1
 {
     class Program
     {
-        static void Main(string[] args)
-        {
-            var s = new Student {Id = 1, Name = "Fred"};
-            Console.WriteLine($"Hello {s}");
-        }
+        
 
         // OPTIONAL Q7
-      //  public static void Main (string[] args)
-      //  {
+        public static void Main (string[] args)
+        {
             // call relevant methods here to test
-       //     Question7_1();
-       //    Question7_2();
-       //     Question7_3();
-       // }
+            Question7_1();
+           //Question7_2();
+           // Question7_3();
+        }
         
         public static void Question7_1()
         {

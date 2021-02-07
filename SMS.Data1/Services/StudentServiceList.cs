@@ -6,6 +6,7 @@ namespace SMS.Data1.Services{
 
 
     // Implementation of IStudentservice using a List
+    //This student service list implements IStudentService
     public class StudentServiceList : IStudentService
     {
         private readonly List<Student> Students;

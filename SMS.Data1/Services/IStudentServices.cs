@@ -4,13 +4,16 @@ using SMS.Data1.Services;
 
 using SMS.Data1.Models;
 
-//Git test comment
 
 namespace SMS.Data1.Services
 {
     // This interface describes the operations that a StudentService class should implement
+    //interface is a specification for a class. If you want to create a class of type
+    //Student interface then your class must provide these methods.
     public interface IStudentService
     {
+        //These are the methods that must be provided but they are simply
+        //method signatures with no body to the method.
         // Initialise the repository - only to be used during development 
         void Initialise();
        
