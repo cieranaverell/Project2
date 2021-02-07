@@ -54,11 +54,16 @@ namespace SMS.Data1
             // retrieve all students - order by grade ascending 
             // and print students name course and grade
             var simpsons = svc.GetStudents()
-                            .OrderBy(s => s.Grade)
-                            .Select(s => new {s.Name, s.Course, s.Grade});
+                            .OrderBy(s => s.Grade);
+                           // .Select(s => new {s.Name, s.Course, s.Grade});
             //simpsons is now a list of anonomous objects with a name a course and a grade.
             //print list
-            Console.WriteLine(simpsons);
+           // Console.WriteLine(simpsons);
+           foreach(var s in simpsons)
+           {
+               Console.WriteLine($"{s.Name} {s.Course} {s.Grade}");
+           }
+
 
         }
         public static void Question7_3()
@@ -69,6 +74,11 @@ namespace SMS.Data1
 
             // retrieve all students then print any students with a
             // grade >= 60 (marge/lisa)
+            var commendations = svc.GetStudents().Where(s => s.Grade >= 60);
+            foreach(var s in commendations)
+           {
+               Console.WriteLine($"{s.Name} {s.Course} {s.Grade}");
+           }
             
 
         }
