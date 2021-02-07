@@ -36,13 +36,13 @@ namespace SMS.Test
         [Fact] // --- AddStudent Duplicate Test
         public void AddStudent_WhenDuplicateEmail_ShouldReturnNull()
         {
-            // act 
+            // act. create two students. Same email address. 
            var s1 = svc.AddStudent("XXX", "Computing", "xxx@gmail.com", 20, 50);
            var s2 = svc.AddStudent("YYY", "Computing", "xxx@gmail.com", 19, 50);
 
-            // assert
-            Assert.NotNull(s1);
-            Assert.Null(s2);
+            // assert. 
+            Assert.NotNull(s1); //s1 should not be null
+            Assert.Null(s2); //s2 should be null as this students should not be created
             
         }
 

@@ -51,9 +51,9 @@ namespace SMS.Data1.Services{
             //if duplicate  email, dont add student and return null 
             // otherwise add student and return new student
             var exists = GetStudentByEmail(email);
-            if (exists != null)
+            if (exists != null) //that means student already exists
             {
-                return null;
+                return null; //don't creaate as a student already exists
             }
          
             // go ahead and create unique student
@@ -74,24 +74,25 @@ namespace SMS.Data1.Services{
         {
             // if student doesnt exist return false
             var s = GetStudent(id);
-            if (s == null ) {
-                return false;
+            if (s == null ) { //that means no student with that id exists
+                return false; //no student exists to be deleted
             }
 
             var deleted = Students.RemoveAll(student => student.Id == id);
             // otherwise remove student and return true
-            return deleted == 1;
+            return true;
         }
 
         // Q4 Update the student with the details in updated 
         public Student UpdateStudent(Student updated)
         {
             // retrieve student if doesnt exist return null
-            var student = GetStudent(updated.Id);
+            var student = GetStudent(updated.Id); //student is a reference to a student
             if (student == null)
             {
-                return null;
+                return null; //could not update as no such student
             }
+            //found student so update properties using updated paramenters
             // update the details of the student retrieved and return updated student
             student.Name = updated.Name;
             student.Email = updated.Email;

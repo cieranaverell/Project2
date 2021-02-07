@@ -13,23 +13,38 @@ namespace SMS.Data1
         {
             // call relevant methods here to test
             Question7_1();
-           //Question7_2();
-           // Question7_3();
+            Question7_2();
+            Question7_3();
         }
         
         public static void Question7_1()
         {
             Console.WriteLine("\nQuestion 7.1 - List all Student Names");
+            //create an instance of our service
             IStudentService svc = new StudentServiceList();
+            //calls method called seed and passes this service as a parameter
             Seed(svc); // add seed data
 
+            //after calling the seed method this list now has 4 students
+
             // retrieve all students and print student names
+            //retrieve students
+            var simpsons = svc.GetStudents();
+            //print out student names
+            foreach(var s in simpsons)
+            {
+                Console.WriteLine(s.Name);
+            }
+
+            //Console.WriteLine(simpsons.ToString());//will print out all the student details
+
             
         }
 
         public static void Question7_2()
         {
             Console.WriteLine("\nQuestion 7.2 - List students in Grade Order");
+            //create an instance of our service
             IStudentService svc = new StudentServiceList();
             Seed(svc); // add seed data
 
@@ -51,6 +66,9 @@ namespace SMS.Data1
         }
         
         // ===== Utility add dummy student data via service ====== 
+        //seed method takes the service as a parameter and then calls the add
+        //student method on our service to add these students.
+        //This means the student service will now be populated with data.
         private static void Seed(IStudentService svc)
         {            
             svc.AddStudent("Homer", "Physics", "joe@mail.com", 42, 50);
