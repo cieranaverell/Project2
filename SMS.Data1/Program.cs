@@ -1,6 +1,7 @@
 ﻿using System;
 using SMS.Data1.Models;
 using SMS.Data1.Services;
+using System.Linq;
 
 namespace SMS.Data1
 {
@@ -29,14 +30,16 @@ namespace SMS.Data1
 
             // retrieve all students and print student names
             //retrieve students
-            var simpsons = svc.GetStudents();
+            var names = svc.GetStudents()//gets list of students
+                              .Select(s => s.Name);//gets the name from student list
             //print out student names
-            foreach(var s in simpsons)
+            foreach(var n in names)
             {
-                Console.WriteLine(s.Name);
+                Console.WriteLine(n);
             }
 
             //Console.WriteLine(simpsons.ToString());//will print out all the student details
+           
 
             
         }
@@ -50,7 +53,12 @@ namespace SMS.Data1
 
             // retrieve all students - order by grade ascending 
             // and print students name course and grade
-            
+            var simpsons = svc.GetStudents()
+                            .OrderBy(s => s.Grade)
+                            .Select(s => new {s.Name, s.Course, s.Grade});
+            //simpsons is now a list of anonomous objects with a name a course and a grade.
+            //print list
+            Console.WriteLine(simpsons);
 
         }
         public static void Question7_3()
