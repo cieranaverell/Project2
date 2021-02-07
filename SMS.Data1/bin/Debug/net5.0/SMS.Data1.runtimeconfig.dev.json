@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\ciera\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\ciera\\.nuget\\packages"
+    ]
+  }
+}

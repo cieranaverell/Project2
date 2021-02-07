@@ -1,0 +1,16 @@
+C:\Users\ciera\Documents\Practical2\SMS.Data1\bin\Debug\net5.0\SMS.Data1.exe
+C:\Users\ciera\Documents\Practical2\SMS.Data1\bin\Debug\net5.0\SMS.Data1.deps.json
+C:\Users\ciera\Documents\Practical2\SMS.Data1\bin\Debug\net5.0\SMS.Data1.runtimeconfig.json
+C:\Users\ciera\Documents\Practical2\SMS.Data1\bin\Debug\net5.0\SMS.Data1.runtimeconfig.dev.json
+C:\Users\ciera\Documents\Practical2\SMS.Data1\bin\Debug\net5.0\SMS.Data1.dll
+C:\Users\ciera\Documents\Practical2\SMS.Data1\bin\Debug\net5.0\ref\SMS.Data1.dll
+C:\Users\ciera\Documents\Practical2\SMS.Data1\bin\Debug\net5.0\SMS.Data1.pdb
+C:\Users\ciera\Documents\Practical2\SMS.Data1\obj\Debug\net5.0\SMS.Data1.csprojAssemblyReference.cache
+C:\Users\ciera\Documents\Practical2\SMS.Data1\obj\Debug\net5.0\SMS.Data1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ciera\Documents\Practical2\SMS.Data1\obj\Debug\net5.0\SMS.Data1.AssemblyInfoInputs.cache
+C:\Users\ciera\Documents\Practical2\SMS.Data1\obj\Debug\net5.0\SMS.Data1.AssemblyInfo.cs
+C:\Users\ciera\Documents\Practical2\SMS.Data1\obj\Debug\net5.0\SMS.Data1.csproj.CoreCompileInputs.cache
+C:\Users\ciera\Documents\Practical2\SMS.Data1\obj\Debug\net5.0\SMS.Data1.dll
+C:\Users\ciera\Documents\Practical2\SMS.Data1\obj\Debug\net5.0\ref\SMS.Data1.dll
+C:\Users\ciera\Documents\Practical2\SMS.Data1\obj\Debug\net5.0\SMS.Data1.pdb
+C:\Users\ciera\Documents\Practical2\SMS.Data1\obj\Debug\net5.0\SMS.Data1.genruntimeconfig.cache
